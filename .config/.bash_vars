@@ -1,0 +1,17 @@
+#
+# ~/.bash_vars
+#
+# Store personal environment vairables here
+#
+
+# add personal binaries to path - '~/.local/bin'
+# PATH=$HOME/.local/bin:$PATH
+PATH=/opt/cuda/bin:$PATH
+export PATH
+
+export TF_CPP_MIN_LOG_LEVEL=2
+
+# Set default programs
+export VISUAL=vim
+export EDITOR=vim
+export BROWSER=chromium

@@ -1,0 +1,66 @@
+
+
+
+general {
+   colors = true
+   interval = 1
+   color_good = "#37EDF7"
+   color_degraded = "#C4BDBE"
+   color_bad = "#DA4B8E"
+}
+
+order += "cpu_temperature 0"
+order += "load"
+order += "disk /run/media/clcoulte/CLC_PT500B"
+order += "disk /mnt/bkp"
+order += "disk /home"
+order += "disk /"
+order += "ethernet enp0s25"
+order += "wireless wlp3s0"
+order += "volume master"
+order += "tztime local"
+
+wireless wlp3s0 {
+   format_up = "WiFi"
+   format_down = "WiFi"
+}
+
+ethernet enp0s25 {
+   format_up = "enp0s25"
+   format_down = "enp0s25"
+}
+
+cpu_temperature 0 {
+   format = "%degrees°C"
+}
+
+tztime local {
+   format = "%D %r"
+}
+
+load {
+   format = "%5min"
+}
+
+disk "/" {
+   format = "/ %percentage_used"
+}
+
+disk "/home" {
+   format = "home %percentage_used"
+}
+
+disk "/mnt/bkp" {
+   format = "bkp %percentage_used"
+}
+
+disk "/run/media/clcoulte/CLC_PT500B" {
+   format = "media %percentage_used"
+}
+
+volume master {
+   format = "♪ %volume"
+   format_muted = "♪ (%volume)"
+   device = "default"
+   mixer = "Master"
+}
