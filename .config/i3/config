@@ -98,10 +98,12 @@ bindsym $mod+f fullscreen toggle
 # bindsym $mod+e layout toggle split
 
 ## toggle tiling / floating
-# bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 ## change focus between tiling / floating windows
 # bindsym $mod+space focus mode_toggle
+
+focus_follows_mouse no
 
 ## focus the parent container
 # bindsym $mod+a focus parent
@@ -198,12 +200,13 @@ bar {
 
 ## Volume controls
 set $vold 2
-bindsym $mod+minus exec amixer -q set Master $vold- unmute
-bindsym $mod+equal exec amixer -q set Master $vold+ unmute
-bindsym $mod+m exec amixer -q set Master toggle
-# bindsym $mod+minus exec pamixer -d $vold -u
-# bindsym $mod+equal exec pamixer -i $vold -u
-# bindsym $mod+m exec pamixer -t
+
+# bindsym $mod+minus exec amixer -q set Master $vold- unmute
+# bindsym $mod+equal exec amixer -q set Master $vold+ unmute
+# bindsym $mod+m exec amixer -q set Master toggle
+bindsym $mod+minus exec pamixer -d $vold -u
+bindsym $mod+equal exec pamixer -i $vold -u
+bindsym $mod+m exec pamixer -t
 
 ## Music controls
 # play/pause

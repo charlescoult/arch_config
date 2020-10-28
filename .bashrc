@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -31,3 +33,6 @@ shopt -s autocd
 # xterm transparency
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID"  >/dev/null
 
+
+TOLASTLINE=$(tput cup "$LINES")
+PS1="\[$TOLASTLINE\]$PS1"
