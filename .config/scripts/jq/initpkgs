@@ -1,0 +1,3 @@
+#!/bin/bash
+installation="$HOME/.config/installation.json"
+confirm && echo "{ \"packages\": [] }" | jq . > "$installation"
