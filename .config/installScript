@@ -1,0 +1,9 @@
+#!/bin/bash
+# Install script to be run after arch-chroot into new system
+# Needs ALMA_USER set
+set -eux
+
+passwd
+useradd -m ${ALMA_USER}
+passwd ${ALMA_USER}
+usermod -G wheel -a ${ALMA_USER}

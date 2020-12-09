@@ -1,4 +1,5 @@
 #!/bin/bash
 installation="$HOME/.config/installation.json"
 tmp=$(mktemp)
-jq ".packages += [\"${1}\"]" "$installation" > "$tmp" && mv "$tmp" "$installation"
+cat "$installation" | jq -e '.packages | index( "'${1}'" )' > /dev/null || (cat "$installation" | jq -e ".packages += [\"${1}\"]" > "$tmp" && mv $tmp $installation)
+

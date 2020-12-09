@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pkgs=()
+
+if [ "$#" -ne 0 ]; then
+  pkgs=( "$@" )
+fi
+
+sudo pacman -Sy
+
+for pkg in "${pkgs[@]}"
+do
+  sudo pacman -S --noconfirm $pkg && addpkg $pkg
+done
+

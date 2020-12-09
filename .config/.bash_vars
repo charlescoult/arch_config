@@ -6,7 +6,7 @@
 
 # add personal binaries to path - '~/.local/bin'
 # PATH=$HOME/.local/bin:$PATH
-PATH=/opt/cuda/bin:$PATH
+PATH=$HOME/bin:/opt/cuda/bin:$PATH
 export PATH
 
 export TF_CPP_MIN_LOG_LEVEL=2

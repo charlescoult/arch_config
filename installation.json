@@ -1,14 +1,12 @@
 {
   "packages": [
-    "vim",
-    "vi",
     "xorg",
     "xorg-xinit",
-    "xterm",
-    "ttf-dejavu",
-    "sudo",
     "nitrogen",
-    "jq",
+    "ttf-dejavu",
+    "vi",
+    "vim",
+    "xterm",
     "dmenu"
   ]
 }

@@ -7,13 +7,11 @@
 ## if user is not root, pass all commands via sudo
 if [ $UID -ne 0 ]; then
    alias update='sudo pacman -Syu'
-   alias inst='sudo pacman -S'
    alias reboot='sudo reboot'
    alias restart='reboot'
    alias shutdown='sudo shutdown now'
 else
    alias update='pacman -Syu'
-   alias inst='pacman -S'
    # alias reboot='reboot'
    alias restart='reboot'
    alias shutdown='shutdown now'
@@ -40,7 +38,7 @@ alias ping='ping -c 5'
 alias i3config='vim ~/.config/i3/config'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
-alias aliases='vim ~/.bash_aliases'
+alias aliases='vim ~/.config/.bash_aliases'
 alias vars='vim ~/.bash_vars'
 alias xresources='vim ~/.Xresources'
 alias reload='source ~/.bashrc'
