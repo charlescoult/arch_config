@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp -rn ./src/* $HOME
-cp -rn ./src/.* $HOME
+cp -r ./src/* $HOME
+cp -r ./src/.* $HOME
