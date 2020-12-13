@@ -1,4 +1,8 @@
 #!/bin/bash
 
+echo $HOME
+echo $?
 cp -r ./src/* $HOME
+echo $?
 cp -r ./src/.* $HOME
+echo $?
