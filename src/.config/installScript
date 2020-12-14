@@ -23,6 +23,7 @@ git clone $alma
 
 cd dotfiles
 ./install
+echo done
 """ - ${ALMA_USER}
-
+echo done
 

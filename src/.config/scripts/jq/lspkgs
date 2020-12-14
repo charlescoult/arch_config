@@ -1,3 +1,3 @@
 #!/bin/bash
 installation="$HOME/.config/installation.json"
-jq ".packages" "$installation" | jq sort | grep '\"*\"'
+jq ".packages" "$installation" | jq sort

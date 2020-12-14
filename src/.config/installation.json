@@ -9,6 +9,9 @@
     "sudo",
     "nitrogen",
     "jq",
-    "dmenu"
+    "dmenu",
+    "which",
+    "udiskie",
+    "i3"
   ]
 }
