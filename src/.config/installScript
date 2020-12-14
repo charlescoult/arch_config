@@ -3,7 +3,26 @@
 # Needs ALMA_USER set
 set -eux
 
+dotfiles="https://github.com/charlescoult/dotfiles.git"
+almaConfig="https://github.com/charlescoult/alma-config.git"
+alma="https://github.com/r-darwish/alma.git"
+
 passwd
 useradd -m ${ALMA_USER}
 passwd ${ALMA_USER}
 usermod -G wheel -a ${ALMA_USER}
+
+su -l -c """
+pwd
+mkdir .github
+mkdir .aur
+cd .github
+git clone $dotfiles
+git clone $almaConfig
+git clone $alma
+
+cd dotfiles
+./install
+""" - ${ALMA_USER}
+
+
