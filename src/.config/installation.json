@@ -24,6 +24,8 @@
     "python-pytoml",
     "python-u-msgpack",
     "python-setuptools",
-    "git"
+    "git",
+    "i3lock",
+    "colordiff"
   ]
 }
