@@ -1,0 +1,4 @@
+#!/bin/bash
+installation="$HOME/.config/installation.json"
+tmp=$(mktemp)
+jq ".packages.aur += [\"${1}\"]" "$installation" > "$tmp" && mv "$tmp" "$installation"

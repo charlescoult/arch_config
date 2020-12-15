@@ -3,6 +3,5 @@
 pwd
 echo Installing DotFiles
 echo $HOME
-cp -r ./src/* $HOME
-cp -r ./src/.* $HOME
+cp -r src/. $HOME
 echo done
