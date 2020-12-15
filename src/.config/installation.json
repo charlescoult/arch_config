@@ -2,7 +2,9 @@
   "aur_packages": [
     "alma",
     "python-cbor2",
-    "remarshal"
+    "remarshal",
+    "google-chrome",
+    "yay"
   ],
   "packages": [
     "vim",
