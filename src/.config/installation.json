@@ -1,5 +1,9 @@
 {
-  "aur": [],
+  "aur_packages": [
+    "alma",
+    "python-cbor2",
+    "remarshal"
+  ],
   "packages": [
     "vim",
     "vi",
