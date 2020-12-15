@@ -5,5 +5,7 @@ echo Installing DotFiles
 echo $HOME
 cp -r src/. $HOME
 cd $HOME/.config/scripts
+mkdir $HOME/bin
 ln -s $HOME/.config/scripts/* $HOME/bin
+ln -s $HOME/.config/scripts/jq/* $HOME/bin
 echo done
