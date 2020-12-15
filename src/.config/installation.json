@@ -1,4 +1,5 @@
 {
+  "aur": [],
   "packages": [
     "vim",
     "vi",
@@ -12,6 +13,13 @@
     "dmenu",
     "which",
     "udiskie",
-    "i3"
+    "i3",
+    "base-devel",
+    "python",
+    "python-dateutil",
+    "python-pytoml",
+    "python-u-msgpack",
+    "python-setuptools",
+    "git"
   ]
 }

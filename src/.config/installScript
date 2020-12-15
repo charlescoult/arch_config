@@ -19,7 +19,6 @@ mkdir .aur
 cd .github
 git clone $dotfiles
 git clone $almaConfig
-git clone $alma
 
 cd dotfiles
 ./install
