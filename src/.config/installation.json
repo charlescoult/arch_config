@@ -28,6 +28,7 @@
     "python-setuptools",
     "git",
     "i3lock",
-    "colordiff"
+    "colordiff",
+    "python-tomlkit"
   ]
 }
